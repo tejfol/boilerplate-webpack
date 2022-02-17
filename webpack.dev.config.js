@@ -7,7 +7,7 @@ module.exports = {
   mode: "development",
   entry: path.resolve(__dirname, "./src/index.js"),
   output: {
-    filename: "./js/app.[contentHash].js",
+    filename: "./js/app.[contenthash].js",
     path: path.resolve(__dirname, "dist"),
   },
   module: {
@@ -43,8 +43,17 @@ module.exports = {
       template: "public/index.html",
     }),
     new HtmlWebpackPlugin({
-      filename: "faq.html",
-      template: "public/faq.html",
+      filename: "page-2.html",
+      template: "public/page-2.html",
     }),
   ],
+  devServer: {
+    static: {
+      directory: path.resolve(__dirname, "./dist"),
+    },
+    port: 8000,
+    historyApiFallback: {
+      index: "index.html",
+    },
+  },
 };
