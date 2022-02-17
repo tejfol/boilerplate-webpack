@@ -7,15 +7,11 @@ module.exports = {
   mode: "development",
   entry: path.resolve(__dirname, "./src/index.js"),
   output: {
-    filename: "./js/app.[hash].js",
+    filename: "./js/app.[contentHash].js",
     path: path.resolve(__dirname, "dist"),
   },
   module: {
     rules: [
-      // {
-      //   test: /\.css$/,
-      //   use: [MiniCssExtractPlugin.loader, 'css-loader']
-      // },
       {
         test: /\.scss$/,
         use: [
