@@ -2,6 +2,8 @@ const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const SpriteLoaderPlugin = require("svg-sprite-loader/plugin");
+const { resolve } = require("path");
 
 module.exports = {
   mode: "production",
@@ -31,6 +33,16 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.(svg)(\?.*)?$/,
+        loader: "svg-sprite-loader",
+        include: resolve(__dirname, "assets"),
+        options: {
+          extract: true,
+          // spriteFilename: "./img/sprite.svg", // this is the destination of your sprite sheet
+          publicPath: "/",
+        },
+      },
     ],
   },
   plugins: [
@@ -42,9 +54,6 @@ module.exports = {
       filename: "index.html",
       template: "public/index.html",
     }),
-    new HtmlWebpackPlugin({
-      filename: "page-2.html",
-      template: "public/page-2.html",
-    }),
+    new SpriteLoaderPlugin({ plainSprite: true }),
   ],
 };

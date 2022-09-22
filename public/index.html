@@ -1,15 +1,557 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <div class="text-3xl font-bold underline">
-    Isto é apenas um teste
-    <a href="page-2.html">Vá para página 2</a>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Lel</title>
+  </head>
+  <body>
+    <div>
+      <div class="sticky top-0 bg-dark-blue z-10">
+        <header
+          class="container mx-auto flex justify-between bg-dark-blue text-white items-center"
+        >
+          <nav class="px-4 py-2 xl:py-6 items-center flex">
+            <a href="/">
+              <svg
+                class="w-24 xl:w-36 h-auto"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 58 32"
+              >
+                <path
+                  fill="#fff"
+                  d="M11.498 20.482l1.31 1.537 1.303-1.537h0.933v4.418h-1.035v-2.875l-1.196 1.453-1.219-1.441v2.863h-1.029v-3.844l-0.61-0.542-0.037-0.030 1.579-0.003z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M21.63 20.482v4.418h-1.028v-3.844l-0.609-0.542-0.037-0.030 1.674-0.003z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M27.608 24.9h-1.061l1.207-3.856c-0.203-0.173-0.394-0.347-0.585-0.532l-0.030-0.030h2.117l1.387 4.418h-1.052l-0.347-1.010h-1.291l-0.345 1.010zM28.588 21.72l-0.382 1.231h0.771l-0.389-1.231z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M37.131 20.482l1.31 1.537 1.303-1.537h0.932v4.418h-1.033v-2.875l-1.196 1.453-1.219-1.441v2.863h-1.035v-3.844l-0.609-0.542-0.035-0.030 1.583-0.003z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M47.27 20.482v4.418h-1.028v-3.844l-0.611-0.542-0.035-0.030 1.674-0.003z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M3.683 28.867c-0.366-0.242-0.783-0.396-1.219-0.448-0.174-0.005-0.346 0.025-0.508 0.088s-0.31 0.158-0.434 0.279c-0.125 0.121-0.224 0.265-0.292 0.425s-0.104 0.332-0.105 0.505c0 0.801 0.52 1.298 1.338 1.298 0.128 0.005 0.255-0.033 0.359-0.108v-1.345h1.040v1.862c-0.215 0.329-1.010 0.58-1.394 0.58-1.398-0.003-2.468-0.882-2.468-2.286-0.004-0.302 0.053-0.603 0.167-0.883s0.284-0.534 0.499-0.747c0.215-0.213 0.471-0.38 0.752-0.491s0.582-0.165 0.884-0.158c0.402-0.001 0.8 0.084 1.166 0.251 0.134-0.135 0.26-0.279 0.377-0.429l0.035-0.037v0.047c-0.012 0.569-0.018 1.136-0.012 1.704v0.037l-0.030-0.024c-0.049-0.043-0.101-0.083-0.156-0.119z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M9.851 31.928h-1.063l1.207-3.856c-0.203-0.173-0.394-0.347-0.585-0.532l-0.030-0.030h2.116l1.387 4.418h-1.052l-0.347-1.010h-1.291l-0.341 1.010zM10.836 28.748l-0.382 1.231h0.771l-0.389-1.231z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M19.476 31.928h-1.040v-3.844l-0.639-0.574h2.624c0.182-0.004 0.364 0.028 0.533 0.095s0.324 0.168 0.453 0.297c0.13 0.128 0.232 0.282 0.301 0.45s0.103 0.35 0.1 0.532c0.002 0.248-0.066 0.492-0.197 0.703s-0.32 0.38-0.544 0.488l1.1 1.853h-1.219l-0.932-1.68h-0.542l0.003 1.68zM19.476 28.384v1.008h0.841c0.129-0.005 0.251-0.060 0.339-0.154s0.136-0.219 0.133-0.348c-0.001-0.129-0.051-0.252-0.14-0.345s-0.21-0.149-0.338-0.156l-0.836-0.004z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M29.213 27.51c1.376 0 2.147 0.879 2.147 2.182 0 1.219-0.842 2.236-2.147 2.236h-1.49v-3.844l-0.609-0.542-0.035-0.030 2.135-0.003zM28.759 28.473v2.492h0.335c0.79 0 1.159-0.555 1.159-1.273 0-0.753-0.352-1.219-1.159-1.219h-0.335z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M40.091 27.51v0.963h-2.139v0.716h1.692v0.886h-1.692v0.89h2.139v0.963h-3.169v-3.844l-0.609-0.542-0.035-0.030 3.814-0.003z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M46.65 27.51l1.49 2.481v-2.481h1.033v4.418h-0.998l-1.501-2.438v2.438h-1.029v-3.844l-0.609-0.542-0.037-0.030 1.651-0.003z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M56.735 28.682c-0.264-0.183-0.571-0.294-0.891-0.322-0.271 0-0.658 0.095-0.658 0.406 0 0.135 0.114 0.222 0.299 0.306s0.436 0.154 0.688 0.251c0.496 0.191 1.010 0.484 1.010 1.159 0 0.916-0.784 1.513-1.674 1.513-0.482 0.013-0.962-0.080-1.405-0.271h-0.012l0.042-1.219 0.030 0.030 0.144 0.161c0.209 0.215 0.813 0.335 1.117 0.335s0.649-0.149 0.649-0.489c0-0.135-0.114-0.233-0.294-0.322s-0.424-0.168-0.669-0.271c-0.49-0.198-0.986-0.496-0.986-1.166 0-0.939 0.765-1.34 1.625-1.34 0.306 0.013 0.608 0.080 0.891 0.198 0.102-0.095 0.198-0.191 0.299-0.28l0.035-0.037v0.049c-0.037 0.466-0.054 0.932-0.060 1.405v0.035l-0.182-0.13z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M30.953 6.956c0.068-0.099-0.050 0.159-0.007 0.2 0.207 0.515 0.169 1.143 0.217 1.681-0.007 0.046-0.019 0.092-0.035 0.135l0.437-0.706c-0.352 1.084-0.298 2.243-0.020 3.406h0.069l0.259-0.948c-0.271 1.346 0.558 2.536 1.135 3.554 0.085-0.99 0.286-2.206-0.114-3.159l0.53 0.741c0.122-0.661 0.066-1.343-0.163-1.975-0.314-0.481-0.735-0.882-0.967-1.368l1.101 1.136-0.29-1.128c-0.406-0.994-1.31-1.917-2.167-2.438 0 0.069-0.053 0-0.012 0.080 0.283 0.406 0.542 0.813 0.656 1.288l-0.715-0.997 0.085 0.494z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M35.908 9.346c-0.829-1.281-1.195-2.709-2.405-3.764l-1.841-0.172c0.011-0.156 0.324-0.127 0.456-0.179 0.508-0.041 1.018-0.041 1.526 0 0.081-0.152-0.196-0.245-0.232-0.423 0.041-0.118 0.236-0.007 0.303 0.041 0.433 0.348 1.017 0.237 1.514 0.366 0.004-0.048-0.004-0.096-0.025-0.14s-0.052-0.081-0.092-0.108l-0.149-0.37c0.585 0.513 1.601 0.882 2.544 1.169-0.236-0.235-0.497-0.445-0.776-0.627-0.642-0.448-1.329-0.829-2.049-1.138-0.909 0.179-1.785 0.495-2.598 0.939-0.012-0.024-0.019-0.050-0.019-0.077 0.551-0.471 1.306-0.627 1.761-1.188 0.542-0.486 1.027-1.008 1.601-1.426-0.195 0.488-0.874 0.849-1.277 1.338 0.876-0.287 1.879-0.844 3.064-0.753 0.119-0.027 0.075-0.045 0.135-0.075l-1.652-0.542c-0.079-0.027-0.123 0.084-0.217 0.011-0.034-0.076 0.043-0.119 0.075-0.167l-1.074 0.349-0.637 0.466 0.229-0.511-1.084 0.427-0.341 0.593c-0.014 0-0.049 0.018-0.079 0l0.15-0.478c-0.271 0.222-0.585 0.493-0.898 0.8-0.336 0.302-0.5 0.58-0.748 0.891l-0.206 0.448c-0.003 0.021-0.002 0.043 0.005 0.064s0.018 0.039 0.034 0.054l0.994-0.795-0.565 1.016c-0.052 0.030-0.076-0.008-0.126-0.020l-0.439 0.444 1.521 0.962 0.068-0.822c0.307 0.608 0.662 1.262 1.303 1.667 0.046 0.079 0.062 0.114 0.135 0.142l-0.058-1.035c0.271 0.135 0.348 0.542 0.524 0.792l0.209 0.383c0.687 0.26 0.813 0.857 1.279 1.44h0.152z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M30.158 5.54c0.079-0.018 0.196 0.080 0.271 0.019l-0.902-2.901c-0.359-0.263-0.832 0.023-1.227 0.121-0.553 0.288-1.069 0.534-1.499 0.99-0.152 0.079-0.278 0.199-0.366 0.347l0.79-0.024 0.313-0.605c0.012 0 0.049-0.018 0.080 0l-0.13 0.714 0.893 0.153 0.416-0.656c0.023-0.007 0.047-0.007 0.070 0l-0.217 0.813c0.023 0.049 0 0 0.049 0.056 0.574 0.222 0.974 0.611 1.46 0.983z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M30.589 5.282c0.337-1.258 1.097-2.293 2.204-2.873 0-0.026 0.011-0.065-0.026-0.073l-0.568-0.103c-0.001-0.015 0.001-0.029 0.007-0.043s0.015-0.025 0.027-0.034l0.775 0.047c0.505-0.211 1.090-0.542 1.736-0.486 0.044-0.023 0.081-0.056 0.108-0.098 0-0.031-0.027-0.066-0.047-0.093-1.036-0.461-2.053 0.135-3.099 0.359-0.948 0.696-1.373 1.712-1.226 2.95 0.047 0.192 0 0.305 0.080 0.456l0.028-0.009z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M29.746 14.67c-0.019 0.070-0.093 0-0.153 0.034l0.34 1.885c-0.081 0.049-0.169 0.084-0.261 0.103l0.074 0.348h1.555l0.015-0.416c-0.028-0.099-0.19-0.066-0.271-0.111l-0.079-1.761c-0.050-0.095-0.125 0.066-0.203-0.016l0.039-1.578c-0.007-0.073-0.074-0.022-0.135-0.064-0.026-0.024-0.046-0.054-0.057-0.088l0.054-1.429c0-0.066-0.073 0-0.118-0.032l0.089-1.425c-0.038-0.153-0.121 0.012-0.213-0.062l0.118-1.146c-0.037-0.004-0.072-0.019-0.1-0.043l0.169-1.101c-0.009 0-0.054-0.018-0.085-0.020l0.111-1.406c-0.026 0.051-0.187 0.070-0.339 0.092l-0.122 1.084c-0.042 0.135-0.168-0.033-0.255 0.026l-0.041 0.948c-0.008 0.149-0.119 0-0.214 0.051l0.064 1.193c0 0.030-0.034 0.053-0.073 0.069l-0.177-0.011 0.135 1.49c0 0.146-0.118 0.023-0.204 0.081l0.135 1.311-0.203 0.135 0.404 1.858z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M30.097 6.259c-0.026-0.091 0 0.126-0.042 0.135-0.282 0.271-0.406 0.71-0.572 1.054-0.006 0.036-0.009 0.072-0.008 0.108l-0.159-0.638c0 0.859-0.32 1.625-0.813 2.303l-0.054-0.023 0.035-0.737c-0.116 1.010-1.036 1.506-1.719 1.98 0.175-0.699 0.317-1.596 0.851-2.090l-0.578 0.317c0.060-0.48 0.272-0.929 0.604-1.28 0.354-0.209 0.771-0.325 1.063-0.567l-1.108 0.358 0.492-0.654c0.55-0.52 1.455-0.813 2.228-0.844-0.016 0.047 0.042 0.018-0.009 0.058-0.312 0.168-0.612 0.345-0.813 0.628l0.783-0.406-0.186 0.302z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M25.858 0.719l0.042-0.032c0.448-0.347 0.972-0.582 1.529-0.687-2.791 0.295-4.080 2.573-5.039 4.275-0.123 0.218-0.24 0.424-0.355 0.616-1.055 1.777-3.966 8.429-3.994 8.495l-1.571 3.608h1.354l1.093-2.762c0.022-0.058 2.278-5.889 3.805-9.044 1.3-2.68 2.422-3.91 3.136-4.47z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M19.801 14.348c0-0.018 0.494-1.761 1.354-4.031 0.798-2.093 2.090-5.067 3.708-7.359 0.958-1.354 1.984-2.018 3.049-1.975 0.805 0.031 1.625 0.462 2.423 1.28 0.521 0.545 0.977 1.149 1.359 1.8 0.448 0.75 1.673 3.182 2.032 3.979 0.349 0.775 3.505 8.418 3.78 9.086l2.521 0.015c-0.271-0.61-3.35-6.852-3.485-7.103-1.334-2.494-2.578-4.623-2.775-4.944-0.633-1.032-2.303-3.532-4.084-4.479-0.455-0.247-0.963-0.378-1.48-0.381h-0.058c-0.688 0.043-1.348 0.288-1.896 0.706-0.009 0.009-0.026 0.022-0.046 0.038-0.702 0.554-1.805 1.769-3.087 4.415-1.522 3.15-3.778 8.976-3.801 9.034l-1.073 2.709h0.775l0.784-2.791z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M40.713 17.142v-0.153c-1.49-2.844-2.514-4.808-3.198-6.122-1.516-2.904-1.606-3.077-2.003-3.76-0.057-0.099-0.135-0.242-0.233-0.425-0.469-0.87-1.341-2.489-2.557-3.928-1.062-1.252-2.137-2.064-3.211-2.426 0.11 0.045 0.218 0.095 0.322 0.152 0.813 0.427 1.673 1.205 2.573 2.313 0.57 0.705 1.093 1.447 1.564 2.221 0.228 0.367 1.498 2.554 2.783 4.946 1.678 3.122 3.538 6.753 3.755 7.179l0.205 0.003z"
+                ></path>
+              </svg>
+            </a>
+            <div class="hidden lg:flex pl-8 font-bold">
+              <a class="transition-colors hover:text-gold px-4 py-2" href="#"
+                >DINE</a
+              >
+              <a class="transition-colors hover:text-gold px-4 py-2" href="#"
+                >INNOVATE</a
+              >
+              <a class="transition-colors hover:text-gold px-4 py-2" href="#"
+                >INVEST</a
+              >
+              <a class="transition-colors hover:text-gold px-4 py-2" href="#"
+                >LIVE</a
+              >
+              <a class="transition-colors hover:text-gold px-4 py-2" href="#"
+                >PLAY</a
+              >
+              <a class="transition-colors hover:text-gold px-4 py-2" href="#"
+                >SHOP</a
+              >
+            </div>
+          </nav>
+          <div class="hidden lg:flex items-center">
+            <button class="px-4 py-2 xl:py-6 font-bold">GET CONNECTED</button>
+            <div class="flex gap-4 px-4 py-2 xl:py-6">
+              <a href="Facebook"
+                ><svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_9976_42777)">
+                    <path
+                      d="M12 0C8.7435 0 8.334 0.015 7.0545 0.072C5.775 0.132 4.9035 0.333 4.14 0.63C3.33914 0.931229 2.61374 1.40374 2.0145 2.0145C1.40411 2.61404 0.931661 3.33936 0.63 4.14C0.333 4.902 0.1305 5.775 0.072 7.05C0.015 8.3325 0 8.7405 0 12.0015C0 15.2595 0.015 15.6675 0.072 16.947C0.132 18.225 0.333 19.0965 0.63 19.86C0.9375 20.649 1.347 21.318 2.0145 21.9855C2.6805 22.653 3.3495 23.064 4.1385 23.37C4.9035 23.667 5.7735 23.8695 7.0515 23.928C8.3325 23.985 8.7405 24 12 24C15.2595 24 15.666 23.985 16.947 23.928C18.2235 23.868 19.098 23.667 19.8615 23.37C20.6618 23.0686 21.3867 22.5961 21.9855 21.9855C22.653 21.318 23.0625 20.649 23.37 19.86C23.6655 19.0965 23.868 18.225 23.928 16.947C23.985 15.6675 24 15.2595 24 12C24 8.7405 23.985 8.3325 23.928 7.0515C23.868 5.775 23.6655 4.902 23.37 4.14C23.0684 3.33934 22.5959 2.61401 21.9855 2.0145C21.3864 1.40351 20.661 0.930968 19.86 0.63C19.095 0.333 18.222 0.1305 16.9455 0.072C15.6645 0.015 15.258 0 11.997 0H12.0015H12ZM10.9245 2.163H12.0015C15.2055 2.163 15.585 2.1735 16.8495 2.232C18.0195 2.2845 18.6555 2.481 19.0785 2.6445C19.638 2.862 20.0385 3.123 20.4585 3.543C20.8785 3.963 21.138 4.362 21.3555 4.923C21.5205 5.3445 21.7155 5.9805 21.768 7.1505C21.8265 8.415 21.8385 8.7945 21.8385 11.997C21.8385 15.1995 21.8265 15.5805 21.768 16.845C21.7155 18.015 21.519 18.6495 21.3555 19.0725C21.1631 19.5935 20.856 20.0647 20.457 20.451C20.037 20.871 19.638 21.1305 19.077 21.348C18.657 21.513 18.021 21.708 16.8495 21.762C15.585 21.819 15.2055 21.8325 12.0015 21.8325C8.7975 21.8325 8.4165 21.819 7.152 21.762C5.982 21.708 5.3475 21.513 4.9245 21.348C4.40325 21.1559 3.93169 20.8494 3.5445 20.451C3.14513 20.0641 2.83758 19.5925 2.6445 19.071C2.481 18.6495 2.2845 18.0135 2.232 16.8435C2.175 15.579 2.163 15.1995 2.163 11.994C2.163 8.79 2.175 8.412 2.232 7.1475C2.286 5.9775 2.481 5.3415 2.646 4.9185C2.8635 4.359 3.1245 3.9585 3.5445 3.5385C3.9645 3.1185 4.3635 2.859 4.9245 2.6415C5.3475 2.4765 5.982 2.2815 7.152 2.2275C8.259 2.1765 8.688 2.1615 10.9245 2.16V2.163ZM18.4065 4.155C18.2174 4.155 18.0301 4.19225 17.8554 4.26461C17.6807 4.33698 17.522 4.44305 17.3883 4.57677C17.2545 4.71048 17.1485 4.86923 17.0761 5.04394C17.0037 5.21864 16.9665 5.4059 16.9665 5.595C16.9665 5.7841 17.0037 5.97135 17.0761 6.14606C17.1485 6.32077 17.2545 6.47952 17.3883 6.61323C17.522 6.74695 17.6807 6.85302 17.8554 6.92539C18.0301 6.99775 18.2174 7.035 18.4065 7.035C18.7884 7.035 19.1547 6.88329 19.4247 6.61323C19.6948 6.34318 19.8465 5.97691 19.8465 5.595C19.8465 5.21309 19.6948 4.84682 19.4247 4.57677C19.1547 4.30671 18.7884 4.155 18.4065 4.155ZM12.0015 5.838C11.1841 5.82525 10.3723 5.97523 9.61347 6.27921C8.85459 6.58319 8.16377 7.03511 7.58123 7.60863C6.99868 8.18216 6.53605 8.86585 6.22026 9.61989C5.90448 10.3739 5.74185 11.1833 5.74185 12.0007C5.74185 12.8182 5.90448 13.6276 6.22026 14.3816C6.53605 15.1356 6.99868 15.8193 7.58123 16.3929C8.16377 16.9664 8.85459 17.4183 9.61347 17.7223C10.3723 18.0263 11.1841 18.1763 12.0015 18.1635C13.6193 18.1383 15.1623 17.4779 16.2975 16.3249C17.4326 15.1719 18.0689 13.6188 18.0689 12.0007C18.0689 10.3827 17.4326 8.82962 16.2975 7.67662C15.1623 6.52363 13.6193 5.86324 12.0015 5.838ZM12.0015 7.9995C13.0625 7.9995 14.08 8.42098 14.8303 9.17122C15.5805 9.92146 16.002 10.939 16.002 12C16.002 13.061 15.5805 14.0785 14.8303 14.8288C14.08 15.579 13.0625 16.0005 12.0015 16.0005C10.9405 16.0005 9.92296 15.579 9.17272 14.8288C8.42248 14.0785 8.001 13.061 8.001 12C8.001 10.939 8.42248 9.92146 9.17272 9.17122C9.92296 8.42098 10.9405 7.9995 12.0015 7.9995Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_9976_42777">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a href="Facebook"
+                ><svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23.643 4.93708C22.808 5.30708 21.911 5.55708 20.968 5.67008C21.941 5.08787 22.669 4.17154 23.016 3.09208C22.1019 3.63507 21.1014 4.01727 20.058 4.22208C19.3564 3.47294 18.4271 2.9764 17.4143 2.80955C16.4016 2.6427 15.3621 2.81487 14.4572 3.29933C13.5524 3.78379 12.8328 4.55344 12.4102 5.48878C11.9875 6.42412 11.8855 7.47283 12.12 8.47208C10.2677 8.37907 8.45564 7.89763 6.80144 7.05898C5.14723 6.22034 3.68785 5.04324 2.51801 3.60408C2.11801 4.29408 1.88801 5.09408 1.88801 5.94608C1.88757 6.71307 2.07644 7.46832 2.43789 8.14481C2.79934 8.8213 3.32217 9.39812 3.96001 9.82408C3.22029 9.80054 2.49688 9.60066 1.85001 9.24108V9.30108C1.84994 10.3768 2.22204 11.4195 2.90319 12.2521C3.58434 13.0847 4.53258 13.656 5.58701 13.8691C4.9008 14.0548 4.18135 14.0821 3.48301 13.9491C3.78051 14.8747 4.36001 15.6841 5.14038 16.264C5.92075 16.8439 6.86293 17.1653 7.83501 17.1831C6.18484 18.4785 4.1469 19.1812 2.04901 19.1781C1.67739 19.1782 1.30609 19.1565 0.937012 19.1131C3.06649 20.4823 5.54535 21.2089 8.07701 21.2061C16.647 21.2061 21.332 14.1081 21.332 7.95208C21.332 7.75208 21.327 7.55008 21.318 7.35008C22.2293 6.69105 23.0159 5.87497 23.641 4.94008L23.643 4.93708Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <a href="Facebook"
+                ><svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.625 2.625H3.375C2.96016 2.625 2.625 2.96016 2.625 3.375V20.625C2.625 21.0398 2.96016 21.375 3.375 21.375H20.625C21.0398 21.375 21.375 21.0398 21.375 20.625V3.375C21.375 2.96016 21.0398 2.625 20.625 2.625ZM18.4594 8.09766H16.9617C15.7875 8.09766 15.5602 8.65547 15.5602 9.47578V11.2828H18.3633L17.9977 14.1117H15.5602V21.375H12.6375V14.1141H10.193V11.2828H12.6375V9.19687C12.6375 6.77578 14.1164 5.45625 16.2773 5.45625C17.3133 5.45625 18.2016 5.53359 18.4617 5.56875V8.09766H18.4594Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <button
+            class="lg:hidden flex flex-col gap-1.5 px-4 py-4"
+            type="button"
+          >
+            <div class="w-6 h-0.5 rounded-full bg-white"></div>
+            <div class="w-6 h-0.5 rounded-full bg-white"></div>
+            <div class="w-6 h-0.5 rounded-full bg-white"></div>
+          </button>
+          <div
+            tabindex="-1"
+            id="hamburger"
+            class="transition-all duration-300 hamburger-toggle absolute top-0 bg-dark-blue right-0 h-screen w-full sm:w-80"
+          >
+            <button
+              tabindex="-1"
+              class="transition-colors w-16 h-16 p-6 fill-white hover:fill-red-600"
+              type="button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 47.971 47.971"
+              >
+                <path
+                  d="M28.228,23.986L47.092,5.122c1.172-1.171,1.172-3.071,0-4.242c-1.172-1.172-3.07-1.172-4.242,0L23.986,19.744L5.121,0.88
+		c-1.172-1.172-3.07-1.172-4.242,0c-1.172,1.171-1.172,3.071,0,4.242l18.865,18.864L0.879,42.85c-1.172,1.171-1.172,3.071,0,4.242
+		C1.465,47.677,2.233,47.97,3,47.97s1.535-0.293,2.121-0.879l18.865-18.864L42.85,47.091c0.586,0.586,1.354,0.879,2.121,0.879
+		s1.535-0.293,2.121-0.879c1.172-1.171,1.172-3.071,0-4.242L28.228,23.986z"
+                />
+              </svg>
+            </button>
+            <div class="flex flex-col py-2 px-8 font-bold">
+              <a
+                tabindex="-1"
+                class="transition-colors py-2 hover:text-gold"
+                href="#"
+                >DINE</a
+              >
+              <a
+                tabindex="-1"
+                class="transition-colors py-2 hover:text-gold"
+                href="#"
+                >INNOVATE</a
+              >
+              <a
+                tabindex="-1"
+                class="transition-colors py-2 hover:text-gold"
+                href="#"
+                >INVEST</a
+              >
+              <a
+                tabindex="-1"
+                class="transition-colors py-2 hover:text-gold"
+                href="#"
+                >LIVE</a
+              >
+              <a
+                tabindex="-1"
+                class="transition-colors py-2 hover:text-gold"
+                href="#"
+                >PLAY</a
+              >
+              <a
+                tabindex="-1"
+                class="transition-colors py-2 hover:text-gold"
+                href="#"
+                >SHOP</a
+              >
+            </div>
+          </div>
+        </header>
+      </div>
+      <section
+        class="bg-slate-500 relative max-h-96 h-96 xl:max-h-[90vh] xl:h-cropHeader flex"
+      >
+        <p
+          class="mt-auto mx-auto xl:ml-20 py-12 text-4xl font-bold text-center text-white"
+        >
+          City Hall
+        </p>
+      </section>
+      <div class="container bg-white mx-auto">
+        <main class="p-4">
+          <div>
+            <p class="text-gold font-bold text-4xl text-center py-4 pb-8">
+              Explore the Miami Gardens Metaverse
+            </p>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-2">
+            <!-- VIDEO COMPONENT -->
+            <div class="aspect-video relative">
+              <div
+                class="rounded-2xl absolute top-2/4 bottom-0 right-0 left-0 bg-gradient-radial pointer-events-none"
+              ></div>
+              <video
+                class="rounded-2xl cursor-pointer"
+                preload="none"
+                poster="./media/video-thumbnail.jpg"
+              >
+                <source src="./media/video.mp4" type="video/mp4" />
+              </video>
+              <p
+                class="text-white font-semibold text-lg xl:text-2xl text-center absolute bottom-4 right-0 left-0"
+              >
+                Florida Memorial University
+              </p>
+            </div>
+            <!-- VIDEO COMPONENT -->
+            <!-- VIDEO COMPONENT -->
+            <div class="aspect-video relative">
+              <div
+                class="rounded-2xl absolute top-2/4 bottom-0 right-0 left-0 bg-gradient-radial pointer-events-none"
+              ></div>
+              <video
+                class="rounded-2xl cursor-pointer"
+                preload="none"
+                poster="./media/video-thumbnail.jpg"
+              >
+                <source src="./media/video.mp4" type="video/mp4" />
+              </video>
+              <p
+                class="text-white font-semibold text-lg xl:text-2xl text-center absolute bottom-4 right-0 left-0"
+              >
+                Hard Rock Stadium
+              </p>
+            </div>
+            <!-- VIDEO COMPONENT -->
+            <!-- VIDEO COMPONENT -->
+            <div class="aspect-video relative">
+              <div
+                class="rounded-2xl absolute top-2/4 bottom-0 right-0 left-0 bg-gradient-radial pointer-events-none"
+              ></div>
+              <video
+                class="rounded-2xl cursor-pointer"
+                preload="none"
+                poster="./media/video-thumbnail.jpg"
+              >
+                <source src="./media/video.mp4" type="video/mp4" />
+              </video>
+              <p
+                class="text-white font-semibold text-lg xl:text-2xl text-center absolute bottom-4 right-0 left-0"
+              >
+                Top Golf
+              </p>
+            </div>
+            <!-- VIDEO COMPONENT -->
+            <!-- VIDEO COMPONENT -->
+            <div class="aspect-video relative">
+              <div
+                class="rounded-2xl absolute top-2/4 bottom-0 right-0 left-0 bg-gradient-radial pointer-events-none"
+              ></div>
+              <video
+                class="rounded-2xl cursor-pointer"
+                preload="none"
+                poster="./media/video-thumbnail.jpg"
+              >
+                <source src="./media/video.mp4" type="video/mp4" />
+              </video>
+              <p
+                class="text-white font-semibold text-lg xl:text-2xl text-center absolute bottom-4 right-0 left-0"
+              >
+                Betty T Ferguson ...
+              </p>
+            </div>
+            <!-- VIDEO COMPONENT -->
+            <!-- VIDEO COMPONENT -->
+            <div class="aspect-video relative">
+              <div
+                class="rounded-2xl absolute top-2/4 bottom-0 right-0 left-0 bg-gradient-radial pointer-events-none"
+              ></div>
+              <video
+                class="rounded-2xl cursor-pointer"
+                preload="none"
+                poster="./media/video-thumbnail.jpg"
+              >
+                <source src="./media/video.mp4" type="video/mp4" />
+              </video>
+              <p
+                class="text-white font-semibold text-lg xl:text-2xl text-center absolute bottom-4 right-0 left-0"
+              >
+                Calder Casino
+              </p>
+            </div>
+            <!-- VIDEO COMPONENT -->
+            <!-- VIDEO COMPONENT -->
+            <div class="aspect-video relative">
+              <div
+                class="rounded-2xl absolute top-2/4 bottom-0 right-0 left-0 bg-gradient-radial pointer-events-none"
+              ></div>
+              <video
+                class="rounded-2xl cursor-pointer"
+                preload="none"
+                poster="./media/video-thumbnail.jpg"
+              >
+                <source src="./media/video.mp4" type="video/mp4" />
+              </video>
+              <p
+                class="text-white font-semibold text-lg xl:text-2xl text-center absolute bottom-4 right-0 left-0"
+              >
+                Bunche Park
+              </p>
+            </div>
+            <!-- VIDEO COMPONENT -->
+            <!-- VIDEO COMPONENT -->
+            <div class="aspect-video relative">
+              <div
+                class="rounded-2xl absolute top-2/4 bottom-0 right-0 left-0 bg-gradient-radial pointer-events-none"
+              ></div>
+              <video
+                class="rounded-2xl cursor-pointer"
+                preload="none"
+                poster="./media/video-thumbnail.jpg"
+              >
+                <source src="./media/video.mp4" type="video/mp4" />
+              </video>
+              <p
+                class="text-white font-semibold text-lg xl:text-2xl text-center absolute bottom-4 right-0 left-0"
+              >
+                St. Thomas University
+              </p>
+            </div>
+            <!-- VIDEO COMPONENT -->
+            <!-- VIDEO COMPONENT -->
+            <div class="aspect-video relative">
+              <div
+                class="rounded-2xl absolute top-2/4 bottom-0 right-0 left-0 bg-gradient-radial pointer-events-none"
+              ></div>
+              <video
+                class="rounded-2xl cursor-pointer"
+                preload="none"
+                poster="./media/video-thumbnail.jpg"
+              >
+                <source src="./media/video.mp4" type="video/mp4" />
+              </video>
+              <p
+                class="text-white font-semibold text-lg xl:text-2xl text-center absolute bottom-4 right-0 left-0"
+              >
+                Senior Family Center
+              </p>
+            </div>
+            <!-- VIDEO COMPONENT -->
+            <!-- VIDEO COMPONENT -->
+            <div class="aspect-video relative">
+              <div
+                class="rounded-2xl absolute top-2/4 bottom-0 right-0 left-0 bg-gradient-radial pointer-events-none"
+              ></div>
+              <video
+                class="rounded-2xl cursor-pointer"
+                preload="none"
+                poster="./media/video-thumbnail.jpg"
+              >
+                <source src="./media/video.mp4" type="video/mp4" />
+              </video>
+              <p
+                class="text-white font-semibold text-lg xl:text-2xl text-center absolute bottom-4 right-0 left-0"
+              >
+                Andover Park
+              </p>
+            </div>
+            <!-- VIDEO COMPONENT -->
+          </div>
+          <div
+            class="bg-dark-blue flex flex-col lg:flex-row lg:items-center gap-4 xs:gap-8 rounded-lg p-4 xs:p-8 mt-8"
+          >
+            <img
+              class="rounded-2xl w-full lg:max-w-[30%] mx-auto lg:m-0"
+              src="./img/vr-headset.jpg"
+              alt="VR HEADSET"
+            />
+            <p
+              class="lg:hidden text-white text-xl xs:text-2xl md:text-3xl font-bold px-8 text-center"
+            >
+              Experience the Miami Gardens Metaverse NOW
+            </p>
+            <p
+              class="hidden lg:block text-white text-left mx-auto text-3xl xl:text-4xl font-bold"
+            >
+              Experience the Miami <br />
+              Gardens Metaverse NOW
+            </p>
+            <svg
+              class="w-20 xl:w-28 h-20 xl:h-28 mx-auto"
+              viewBox="0 0 87 87"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask
+                id="mask0_9976_43513"
+                style="mask-type: alpha"
+                maskUnits="userSpaceOnUse"
+                x="5"
+                y="5"
+                width="74"
+                height="74"
+              >
+                <path
+                  d="M43.5 7.25V21.75"
+                  stroke="white"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M39.875 39.875L76.125 47.125L65.25 54.375L76.125 65.25L65.25 76.125L54.375 65.25L47.125 76.125L39.875 39.875Z"
+                  fill="white"
+                  stroke="white"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M69.1324 17.8676L58.8791 28.1209M17.8676 69.1324L28.1209 58.8791M7.25 43.5H21.75M17.8676 17.8676L28.1209 28.1209"
+                  stroke="white"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </mask>
+              <g mask="url(#mask0_9976_43513)">
+                <path d="M0 0H87V87H0V0Z" fill="#D1A123" />
+              </g>
+            </svg>
+          </div>
+        </main>
+      </div>
+      <footer class="bg-footer">
+        <div class="container mx-auto">jh</div>
+      </footer>
+    </div>
+  </body>
 </html>
+
+<script type="module" defer>
+  // Video components handler
+  function playVideo(videoContainer) {
+    videoContainer.onclick = (event) => {
+      videoContainer.play();
+    };
+
+    videoContainer.onplay = (event) => {
+      videoContainer.previousElementSibling.classList.add("hidden");
+      videoContainer.nextElementSibling.classList.add("hidden");
+      videoContainer.setAttribute("controls", true);
+    };
+  }
+
+  document.addEventListener("DOMContentLoaded", (event) => {
+    // Handle videos
+    const $videoList = document.querySelectorAll("video");
+
+    $videoList?.forEach((videoContainer) => {
+      playVideo(videoContainer);
+    });
+
+    // Close Hamburger
+    const $hamburger = document.getElementById("hamburger");
+    $hamburger?.firstElementChild?.addEventListener("click", (event) => {
+      console.log("closing hamburger");
+      $hamburger.classList.add("hamburger-toggle");
+    });
+
+    $hamburger?.previousElementSibling?.addEventListener("click", (event) => {
+      console.log("open hamburger");
+      $hamburger.classList.remove("hamburger-toggle");
+    });
+  });
+</script>

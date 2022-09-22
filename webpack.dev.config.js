@@ -42,10 +42,6 @@ module.exports = {
       filename: "index.html",
       template: "public/index.html",
     }),
-    new HtmlWebpackPlugin({
-      filename: "page-2.html",
-      template: "public/page-2.html",
-    }),
   ],
   devServer: {
     static: {
