@@ -7,6 +7,7 @@ module.exports = {
         "light-blue": "#7161FD",
         gold: "#D1A123",
         footer: "#f7f7f7",
+        "secondary-blue": "#7161FD",
       },
 
       height: {
