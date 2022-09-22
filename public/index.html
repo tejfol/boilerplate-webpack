@@ -214,7 +214,7 @@
           <div
             tabindex="-1"
             id="hamburger"
-            class="transition-all duration-300 hamburger-toggle absolute top-0 bg-dark-blue right-0 h-screen w-full sm:w-80"
+            class="transition-all duration-300 hidden absolute top-0 bg-dark-blue right-0 h-screen w-full sm:w-80 hamburger-toggle"
           >
             <button
               tabindex="-1"
@@ -630,18 +630,18 @@
 <script type="module" defer>
   // Video components handler
   function playVideo(videoContainer) {
-    videoContainer.onclick = (event) => {
+    videoContainer.onclick = () => {
       videoContainer.play();
     };
 
-    videoContainer.onplay = (event) => {
+    videoContainer.onplay = () => {
       videoContainer.previousElementSibling.classList.add("hidden");
       videoContainer.nextElementSibling.classList.add("hidden");
       videoContainer.setAttribute("controls", true);
     };
   }
 
-  document.addEventListener("DOMContentLoaded", (event) => {
+  document.addEventListener("DOMContentLoaded", () => {
     // Handle videos
     const $videoList = document.querySelectorAll("video");
 
@@ -651,14 +651,18 @@
 
     // Close Hamburger
     const $hamburger = document.getElementById("hamburger");
-    $hamburger?.firstElementChild?.addEventListener("click", (event) => {
-      console.log("closing hamburger");
+    $hamburger?.firstElementChild?.addEventListener("click", () => {
       $hamburger.classList.add("hamburger-toggle");
+      setTimeout(() => {
+        $hamburger.classList.add("hidden");
+      }, 200);
     });
 
-    $hamburger?.previousElementSibling?.addEventListener("click", (event) => {
-      console.log("open hamburger");
-      $hamburger.classList.remove("hamburger-toggle");
+    $hamburger?.previousElementSibling?.addEventListener("click", () => {
+      setTimeout(() => {
+        $hamburger.classList.remove("hamburger-toggle");
+      }, 200);
+      $hamburger.classList.remove("hidden");
     });
 
     // Scroll to top
@@ -676,7 +680,7 @@
       }
     };
 
-    $scrollToTopButton.addEventListener("click", (e) => {
+    $scrollToTopButton.addEventListener("click", () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   });
