@@ -8,6 +8,7 @@ module.exports = {
         gold: "#D1A123",
         footer: "#f7f7f7",
         "secondary-blue": "#7161FD",
+        discount: "rgba(255, 255, 255, 0.15)",
       },
 
       height: {
@@ -17,6 +18,7 @@ module.exports = {
       backgroundImage: {
         "gradient-radial":
           "linear-gradient(180deg, rgba(0, 28, 75, 0) 0%, rgba(9, 0, 75, 0.9) 100%)",
+        experience: " linear-gradient(180deg, #5D43FD 0%, #001C4B 100%)",
       },
     },
 
