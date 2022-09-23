@@ -13,6 +13,7 @@ module.exports = {
 
       height: {
         cropHeader: "calc(90vh - 127.45px)",
+        cropHeaderv2: "calc(100vh - 127.45px)",
       },
 
       backgroundImage: {
